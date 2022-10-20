@@ -1,0 +1,349 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto, sans-serif;
+    box-sizing: border-box;
+}
+ul
+{
+    list-style-type: none;
+}
+a
+{
+    text-decoration: none !important;
+}
+nav{
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+.navbar
+{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: black;
+    background-color: white;
+    padding-bottom: 0;
+}
+.left-container
+{
+    padding-bottom: 0;
+
+}
+.left-container ul{
+    width: 100%;
+    padding: 30px;
+    padding-bottom: 0;
+    display: flex;
+}
+.left-container li{
+    padding:0 20px;
+}
+.left-container a
+{
+    color: black;
+    padding-right: 20px;
+}
+i{
+    color: black;
+}
+.right-container
+{
+    color: white;
+    padding: 30px;
+    padding-bottom: 0;
+    display: flex;
+    width: 500px;
+    justify-content: space-evenly;
+}
+.right-container .search-box
+{
+    border-bottom: 1px solid black;
+}
+.search-box input:focus
+{
+    width: 200px;
+}
+.right-container input
+{
+    background: transparent;
+    border: none;
+    outline:none;
+}
+
+.right-container .button1
+{
+    padding: 10px 20px;
+    background: #18C683;
+    border: none;
+    color: #ffffff;
+    border-radius: 20px;
+}
+.right-container .button2
+{
+    background: none;
+    color: #fff;
+    border: none;
+}
+.content1{
+    position: relative;
+    margin-top: 5%;
+    background: linear-gradient(to right, rgb(63, 81, 181), rgb(100, 181, 246));
+}
+.content1 ul
+{
+    background: linear-gradient(to right, rgb(63, 81, 181), rgb(100, 181, 246));
+    height: 20vh;
+    color: #fff;
+    display: flex;
+    padding:50px;
+}
+.content1 ul li{
+    margin-left: 8%;
+}
+.content2 
+{
+    background-color:rgb(231, 219, 219);
+    color: #000000e9;
+    border: 1px solid #d4d4d5;
+    padding: 20px;
+    margin-top: -11rem;
+    
+}
+.content2 table
+{
+    position: relative;
+    width: 80%;
+    margin-left: 9%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.57);
+    background-color: #fafafa;
+    border-radius: 2px;
+}
+.content2 img
+{
+    width: 30px;
+}
+.content2 th
+{
+    color: #00000099;
+    padding: 10px;
+    margin-left: 10px;
+}
+.content2 td,th
+{
+    border-bottom: 1px solid rgba(34,36,38,.1);
+    padding: 10px 15px;
+    font: 14px Lato, Helvetica, Arial, sans-serif;
+}
+.content2 table tr:hover
+{
+    background-color: #f5c7c785;
+}
+.name
+{
+    display: flex;
+    align-items: center;
+}
+.name1 h4,p
+{
+    margin: 0;
+}
+.name1 
+{
+    padding-left: 10px;
+}
+.name1 a
+{
+    text-decoration: none;
+    color: black;
+}
+.name1 a:hover
+{
+    text-decoration:underline;
+}
+.green
+{
+    color: #18C683 !important;
+    padding-left: 10px;
+}
+.red
+{
+    color:#f44336 !important;
+    padding-left: 10px;
+
+}
+footer
+{
+    width: 96%;
+    background: linear-gradient(to right, rgb(63, 81, 181), rgb(100, 181, 246));
+    color: #fff;
+    padding: 30px;
+}
+.footer1 i
+{
+    color: white;
+}
+.footer1 
+{
+    display: flex;
+    justify-content: space-around;
+}
+.footer1 li ul
+{
+    padding: 10px 0;
+    color: #d4d4d5;
+}
+.footer1 li ul li
+{
+    padding-bottom: 10px;
+}
+.footer1 li ul li:hover
+{
+    color: #fff;
+}
+.view1
+{
+    display: flex;
+    justify-content: space-evenly;  
+}
+.view1 li ul
+{
+    background: none;
+    padding: 10px 0;
+}
+.nameSymbol1
+{
+    background-color: #18C683;
+    padding: 8px;
+    width: 68px;
+    border-radius: 10px;
+    margin-left: 50%;
+}
+.nameSymbol2
+{
+    margin-left: 61%;
+    background-color: #18C683;
+    display: flex;
+    flex-direction: column;
+    width: 65px;
+    text-align: center;
+    border-radius:0 0 20px 20px;
+}
+.nameSymbol2 li
+{
+    padding: 10px 0px;
+    font-size: 10px;
+}
+.view1 li h1
+{
+    margin: 0 0 10px 0;
+}
+.view1 li ul
+{
+    padding: 0;
+}
+.view1 li ul li
+{   
+    margin-left: 0;
+}
+.view1 li ul h3,h2
+{
+    margin-top: 0;
+}
+.view1 .green i
+{
+    color: #18C683 !important;
+}
+.view1 .red i
+{
+    color: #f44336 !important;
+}
+.rank
+{
+    font: 28px Lato,"Helvetica Neue";
+}
+.prices ul
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: gray;
+}
+.prices ul li
+{
+    padding:10px 0;
+    margin-left: 100px;
+}
+.prices ul span{
+    margin-left: 8px;
+    color: black;
+}
+.content3
+{
+    display: flex;
+    justify-content: space-evenly;
+    width: 800px;
+    margin-left: 10%;
+    align-items: center;
+}
+.logo2
+{
+    width: 200px;
+    margin-left: 30px;
+}
+.logo2 h3
+{
+    margin-top: 0;
+}
+.img
+{
+    margin-left: 12%;
+}
+.mainContainer
+{
+    display: flex;
+    justify-content: space-between;
+}
+.sellBuyContainer
+{
+    border-radius: 20px;
+    padding:30px 50px 50px 20px;
+    box-shadow: 0 0 10px black;
+    margin: -3rem 120px 100px 0;
+}
+.sellBuyContainer input
+{
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.sellBuyContainer input[type="submit"]
+{
+    background-color: #18C683;
+    width: 250px;
+    color: #fafafa;
+    border: none;
+    font-size: 20px;
+    margin-left: 35px;
+}
+.logout
+{
+    padding:0 20px;
+}
+.errorMessage
+{
+    color: red;
+}
+.errorMessage1
+{
+    color: green;
+}
+.button1 i
+{
+    color: white;
+}

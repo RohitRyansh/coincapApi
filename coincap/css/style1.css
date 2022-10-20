@@ -1,0 +1,59 @@
+body{
+
+    background: linear-gradient(to right, rgb(63, 81, 181), rgb(100, 181, 246));
+}
+.mainDetails{
+    width: 650px;
+    background-color: aliceblue;
+    margin: 7%;
+    display: flex;
+    border: 1px solid black;
+    padding: 100px;
+    border-radius: 10px;
+    margin-left: 20%;
+}
+.loginDetails
+{
+    margin-left: 10%;
+    width: 300px;
+}
+.loginDetails h1
+{
+    padding-bottom: 20px;
+}
+.loginDetails input{
+    width: 200px;
+    padding:20px;
+    border-radius: 20px;
+    border: none;
+    background-color:rgb(243, 236, 236);
+    margin-bottom: 10px;
+    outline: none;
+}
+a{
+    text-decoration: none;
+    color: rgba(223, 76, 76, 0.905);
+    position: absolute;
+    bottom: 14%;
+    padding-left: 70px;  
+}
+.loginDetails input[type="submit"]
+{
+    width: 200px;
+    background:linear-gradient(to right, rgb(63, 81, 181), rgb(100, 181, 246));
+    color: aliceblue;
+    margin-left: 10%;
+    margin-top: 10px;
+}
+.loginDetails input[type="submit"]:hover
+{
+    background:black;
+    color: white;
+}
+.message1
+{
+    position: absolute;
+    right: 31%;
+    bottom: 58%;
+    color: red;
+}
