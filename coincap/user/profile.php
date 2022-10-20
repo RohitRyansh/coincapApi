@@ -11,7 +11,8 @@ if(isset($_SESSION['userLogged']))
     }
     if(empty($data[0]))
     {
-        echo "<h1>No Record Found</h1>";
+        echo "<h1>No Coins Available</h1>";
+        echo "<a href=\"../index.php\" id=\"button2\">back</a>";
         die;
     }
     echo "<table cellspacing=0 class='profileTable'>";

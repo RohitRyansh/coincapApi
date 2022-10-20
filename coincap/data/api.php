@@ -18,7 +18,7 @@ class coinApi
         curl_close($curl);
         if ($err) 
         {
-            echo "cURL Error #:" . $err;
+            $this->response="Internet not connected !";
         } 
         else 
         {

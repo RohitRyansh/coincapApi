@@ -82,8 +82,11 @@ class user extends validation
         $sql1=$sql1->fetch(PDO::FETCH_ASSOC);
         $sql2=$this->conn->query("SELECT coin_id,NO_COIN,PRICE FROM COINS WHERE user_id='$uid'");
         $sql2=$sql2->fetchAll(PDO::FETCH_ASSOC);
-        $sql2['balance']=$sql1['balance'];
-        return $sql2;
+        if(isset($sql1['balance']))
+        {
+            $sql2['balance']=$sql1['balance'];
+            return $sql2;
+        }
     }
 }   
 

@@ -3,6 +3,12 @@ session_start();
 $_SESSION['check']=false;
 include 'main.php';
 include 'coins/coinInsert.php';
+$obj1=new coinApi($_SESSION['coinId']);
+if(is_string($obj1->response))
+{
+    echo "<h1>".$obj1->response."</h1>";
+    die;
+}
 if(isset($_POST['search']))
 {
     header('location:dataView.php?search='.($_POST['search']));
@@ -20,7 +26,6 @@ if(isset($_POST['sell']))
 }
 if(!empty($_SESSION['coinId']))
 {
-    $obj1=new coinApi($_SESSION['coinId']);
     if(isset($obj1->response['data']))
     {
         echo" <div class=\"content1\">";

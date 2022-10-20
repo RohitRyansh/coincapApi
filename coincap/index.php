@@ -5,6 +5,11 @@ include 'main.php';
 include 'data/api.php';
 include 'validation/validation.php';
 $obj=new coinApi();
+if(is_string($obj->response))
+    {
+        echo "<h1>".$obj->response."</h1>";
+        die;
+    }
 if(isset($_POST['search']))
 {
     header('location:dataView.php?search='.($_POST['search']));
